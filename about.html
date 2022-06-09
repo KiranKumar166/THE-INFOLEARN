@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="utf-8">
+	<title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script src="https://kit.fontawesome.com/7ea51e739f.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+ <!-- nav bar starts here -->
+<nav>
+<div class="menu-icon">
+    <span class="fas fa-bars"></span>
+</div>
+
+<div class="logo"><a href="index.html">THE INFOLEARN</a></div>
+ 
+<div class="nav-items">
+    <li><a href="courses.html">Courses</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+	<div onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="extra"><a href="#">Log in</a></div>
+	<div onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="extra2"><a href="#">Join for Free</a></div>
+</div>
+
+<div class="search-icon">
+    <span class="fas fa-search"></span>
+</div>
+
+<div class="cancel-icon">
+    <span class="fas fa-times"></span>
+</div>
+
+<form action="#">
+    <input type="search" class="search-data" placeholder="Search" required>
+    <button type="submit" class="fas fa-search"></button>
+</form>
+</nav>
+<!-- nav bar ends here -->
+<script>
+      const menuBtn = document.querySelector(".menu-icon span");
+      const searchBtn = document.querySelector(".search-icon");
+      const cancelBtn = document.querySelector(".cancel-icon");
+      const items = document.querySelector(".nav-items");
+      const form = document.querySelector("form");
+      menuBtn.onclick = ()=>{
+        items.classList.add("active");
+        menuBtn.classList.add("hide");
+        searchBtn.classList.add("hide");
+        cancelBtn.classList.add("show");
+      }
+      cancelBtn.onclick = ()=>{
+        items.classList.remove("active");
+        menuBtn.classList.remove("hide");
+        searchBtn.classList.remove("hide");
+        cancelBtn.classList.remove("show");
+        form.classList.remove("active"); 
+      }
+      searchBtn.onclick = ()=>{
+        form.classList.add("active");
+        searchBtn.classList.add("hide");
+        cancelBtn.classList.add("show");
+      }
+</script>
+<!-- nav bar ends here with script -->
+
+<!-- about starts here -->
+<br>
+<div class="container7">
+<h2>Our Vision</h2><br>
+<p style="font-size: 30px;"><b>We envision a world where anyone, <br>anywhere has the power to transform their <br>life through learning.</b></p>
+</div><br><br>
+<!-- about ends here -->
+
+<!-- testionals starts here -->
+<div class="container5">
+<h1 style="text-align: center;">Take a look What Our Learners Says.</h1>
+</div>
+<br>
+<div class="container5">
+<div class="tsmbody">
+<img src="OIP__1_-removebg-preview.png" width="100" height="100"><br><br>
+<p style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu sapien sit amet augue imperdiet porta quis vitae nulla. Phasellus ultricies, ligula sed euismod accumsan, mi ante auctor libero, id volutpat nisl nunc id ligula. Nam varius convallis pretium.</p><br>
+<b style="font-size: 20px; color: #26d63b">David.</b>
+</div>
+<div class="tsmbody">
+<img src="160-1602366_the-independent-young-woman-icono-de-entrevista-de.png" width="100" height="100"><br><br>
+<p style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu sapien sit amet augue imperdiet porta quis vitae nulla. Phasellus ultricies, ligula sed euismod accumsan, mi ante auctor libero, id volutpat nisl nunc id ligula. Nam varius convallis pretium.</p><br>
+<b style="font-size: 20px; color: #26d63b">Cate lara.</b>
+</div>
+<div class="tsmbody">
+<img src="OIP__2_-removebg-preview.png" width="100" height="100"><br><br>
+<p style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu sapien sit amet augue imperdiet porta quis vitae nulla. Phasellus ultricies, ligula sed euismod accumsan, mi ante auctor libero, id volutpat nisl nunc id ligula. Nam varius convallis pretium.</p><br>
+<b style="font-size: 20px; color: #26d63b">James.</b>
+</div>
+</div><br>
+<!-- testionals ends here -->
+
+<!-- footer starts here -->
+<div class="socialmedia">
+<div class="footerbox1">
+<h2>Quick links</h2>
+<br>
+<a href="courses.html">Courses</a><br>
+<a href="contact.html">Contact Us</a><br>
+<a href="about.html">About Us</a><br>
+</div>
+<div class="footerbox2">
+<h2>Social media</h2><br>
+<a href="https://www.linkedin.com/in/kiran-kumar-ba04a01ba/" class="fa fa-linkedin"></a> 
+<a href="https://github.com/KiranKumar166" class="fa fa-github"></a>
+</div>
+<div class="footerbox">
+</div>
+<div class="footerbox3">
+<h1>THE INFOLEARN</h1>
+</div>
+</div>
+<!-- footer ends here -->
+
+
+<!-- sign up starts here -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container10">
+      <h1>Sign Up</h1><br>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button4 type="button4" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button4>
+        <button4 type="submit" class="signupbtn">Sign Up</button4>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<!-- sign up ends here -->
+
+
+<!-- log in starts here -->
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container10">
+      <h1>log in</h1><br>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+
+      <div class="clearfix">
+        <button4 type="button4" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button4>
+        <button4 type="submit" class="signupbtn">Log in</button4>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<!-- log in ends here -->
+
+
+</body>
+</html>	

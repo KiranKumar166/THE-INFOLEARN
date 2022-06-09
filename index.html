@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="utf-8">
+	<title>THE INFOLEARN</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script src="https://kit.fontawesome.com/7ea51e739f.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+ <!-- nav bar starts here -->
+<nav>
+<div class="menu-icon">
+    <span class="fas fa-bars"></span>
+</div>
+
+<div class="logo"><a href="index.html">THE INFOLEARN</a></div>
+ 
+<div class="nav-items">
+    <li><a href="courses.html">Courses</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+	<div onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="extra"><a href="#">Log in</a></div>
+	<div onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="extra2"><a href="#">Join for Free</a></div>
+</div>
+
+<div class="search-icon">
+    <span class="fas fa-search"></span>
+</div>
+
+<div class="cancel-icon">
+    <span class="fas fa-times"></span>
+</div>
+
+<form action="#">
+    <input type="search" class="search-data" placeholder="Search" required>
+    <button type="submit" class="fas fa-search"></button>
+</form>
+</nav>
+<!-- nav bar ends here -->
+<script>
+      const menuBtn = document.querySelector(".menu-icon span");
+      const searchBtn = document.querySelector(".search-icon");
+      const cancelBtn = document.querySelector(".cancel-icon");
+      const items = document.querySelector(".nav-items");
+      const form = document.querySelector("form");
+      menuBtn.onclick = ()=>{
+        items.classList.add("active");
+        menuBtn.classList.add("hide");
+        searchBtn.classList.add("hide");
+        cancelBtn.classList.add("show");
+      }
+      cancelBtn.onclick = ()=>{
+        items.classList.remove("active");
+        menuBtn.classList.remove("hide");
+        searchBtn.classList.remove("hide");
+        cancelBtn.classList.remove("show");
+        form.classList.remove("active"); 
+      }
+      searchBtn.onclick = ()=>{
+        form.classList.add("active");
+        searchBtn.classList.add("hide");
+        cancelBtn.classList.add("show");
+      }
+</script>
+<!-- nav bar ends here with script -->
+
+<!-- banner automated slideshow starts here -->
+<div class="container">
+<div class="slider">
+<div class="slides">
+     <input type="radio" name="radio-btn" id="radio1">
+     <input type="radio" name="radio-btn" id="radio2">
+     <input type="radio" name="radio-btn" id="radio3">
+     <input type="radio" name="radio-btn" id="radio4">
+
+   <div class="slide first">
+     <img src="20220531_134055.jpg" alt="">
+   </div>
+   <div class="slide">
+      <img src="20220609_154539.jpg" alt="">
+   </div>
+   <div class="slide">
+      <img src="20220609_155256.jpg" alt="">
+   </div>
+   <div class="slide">
+      <img src="20220609_160651.jpg" alt="">
+   </div>
+</div>
+
+<div class="navigation-manual">
+    <label for="radio1" class="manual-btn"></label>
+    <label for="radio2" class="manual-btn"></label>
+    <label for="radio3" class="manual-btn"></label>
+    <label for="radio4" class="manual-btn"></label>
+</div>
+
+</div>
+</div> 
+<!-- banner automated slideshow ends here -->
+<script>
+var counter = 1;
+ setInterval(function(){
+   document.getElementById('radio' + counter).checked = true;
+   counter++;
+     if(counter > 4){
+       counter = 1;
+     }
+ }, 7000);
+</script>
+<br>
+<!-- banner automated slideshow ends here with script -->
+
+<!-- top categories starts here -->
+<div class="container2">
+<p style="color: white; font-family:'Montserrat', sans-serif; font-size: 30px; font-weight: 600;">Top Categories</p>
+</div>
+<br>
+<div class="container2">
+<div class="topcatbox">
+<a class="topcategories" href="https://www.udemy.com/courses/design/">
+<i class="fas fa-pen-ruler" align="center"><br><br><p>Design</p></i>
+</a>
+<a class="topcategories" href="https://www.udemy.com/courses/development/">
+<i class="fas fa-code" align="center"><br><br><p>Develop</p></i>
+</a>
+<a class="topcategories" href="https://www.udemy.com/courses/it-and-software/">
+<i class="fas fa-bars-progress" align="center"><br><br><p>IT and Software</p></i>
+</a>
+<a class="topcategories" href="https://www.udemy.com/courses/marketing/">
+<i class="fas fa-magnifying-glass-chart" align="center"><br><br><p>Marketing</p></i>
+</a>
+<br>
+</div>
+</div>
+<br><br>
+<!-- top categories ends here -->
+
+<!-- mid info starts here -->
+<div class="container3">
+<div class="litabt">
+<img src="images__1___1_-removebg-preview (1).png" width="80" height="80">
+<br><br>
+<span class="sub-litabt">Cost Free</span><br><br>
+<p style="font-size: 20px; font-weight: bold;">You can learn a wide range of courses for Cost free in the Infolearn.</p>
+</div>
+<div class="litabt">
+<img src="images__4_-removebg-preview.png" width="80" height="80">
+<br><br>
+<span class="sub-litabt">Learn Anything</span><br><br>
+<p style="font-size: 20px; font-weight: bold;">There are wide range of course that you can learn anything anyskill.</p>
+</div>
+<div class="litabt">
+<img src="IMG_20220602_131158.png" width="80" height="80">
+<br><br>
+<span class="sub-litabt">Flexible Time</span><br><br>
+<p style="font-size: 20px; font-weight: bold;">You can learn anything anycourse at  your flexible time in the infolrearn.</p>
+</div>
+</div>
+<br><br>
+<!-- mid info ends here -->
+
+<!-- select course starts here -->
+<div class="container4">
+<div class="minibox">
+<br>
+<h1 style="font-family: 'Montserrat', sans-serif;">Select Your Courses</h1><br>
+<p style="font-size: 20px; font-family: 'Montserrat', sans-serif;">Choose your course form various categories with a wide range of collcection we have.</p><br>
+<div class="minibox2">
+<li class="selected" id="page1" onclick="change_tab(this.id);">Python</li>
+ <li class="notselected" id="page2" onclick="change_tab(this.id);">Web Development</li>
+ <li class="notselected" id="page3" onclick="change_tab(this.id);">JavaScript</li>
+ <li class="notselected" id="page4" onclick="change_tab(this.id);">Data Science</li>
+ <li class="notselected" id="page5" onclick="change_tab(this.id);">AWS Certification</li>
+ <li class="notselected" id="page6" onclick="change_tab(this.id);">Excel</li>
+ 
+ 
+ <div class='hidden_desc' id="page1_desc">
+    <h2>Expand the World of Python</h2><br>
+ learn how to code using this incredibly useful language. Its simple syntax and readability makes Python perfect<br> for Flask, Django, data science, and machine learning. You’ll learn how to build everything from games to sites<br> to apps.<br><br>
+ <iframe width="360" height="215" src="https://www.youtube.com/embed/Y8Tko2YC5hA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <iframe width="360" height="215" src="https://www.youtube.com/embed/UGj0bOYPdCw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <iframe width="360" height="215" src="https://www.youtube.com/embed/0unqyeg7LXo?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+ <a href="https://www.udemy.com/topic/python/">Explore more</a><br><br>
+ </div>
+
+ <div class='hidden_desc' id="page2_desc">
+    <h2>Build websites and applications with Web Development</h2><br>
+  The world of web development is as wide as the internet itself. Much of our social and vocational lives play out on the internet,<br> which prompts new industries aimed at creating, managing, and debugging the websites and applications that we increasingly<br> rely on.<br><br>
+  <iframe width="360" height="215" src="https://www.youtube.com/embed/l1EssrLxt7E?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="360" height="215" src="https://www.youtube.com/embed/JguKLogoGMk?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+  <iframe width="360" height="215" src="https://www.youtube.com/embed/Ibx2Ri5Blh0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+ <a href="https://www.udemy.com/topic/web-development/">Explore more</a><br><br>
+ </div>
+ 
+ <div class='hidden_desc' id="page3_desc">
+    <h2>Grow your software development skills with JavaScript</h2><br>
+ JavaScript is a text-based computer programming language used to make dynamic web pages. A must-learn for aspiring web <br>developers or programmers, JavaScript can be used for features like image carousels, displaying countdowns and timers, <br>and playing media on a webpage.<br><br>
+ <iframe width="360" height="215" src="https://www.youtube.com/embed/upDLs1sn7g4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <iframe width="360" height="215" src="https://www.youtube.com/embed/Q6bY3FvBxMk?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <iframe width="360" height="215" src="https://www.youtube.com/embed/1PB0NYQmn_k?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+ <a href="https://www.udemy.com/topic/javascript/">Explore more</a><br><br>
+ </div>
+ 
+ <div class='hidden_desc' id="page4_desc">
+    <h2>Lead data-driven decisions with Data Science</h2><br>
+	Data science application is an in-demand skill in many industries worldwide — including finance, transportation, <br>education, manufacturing, human resources, and banking. Explore data science courses with Python, statistics, machine learning,<br> and more to grow your knowledge.<br><br>
+   <iframe width="360" height="215" src="https://www.youtube.com/embed/X3paOmcrTjQ?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <iframe width="360" height="215" src="https://www.youtube.com/embed/wk4xU1BOFQc?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+   <iframe width="360" height="215" src="https://www.youtube.com/embed/S8MmsBsGP-Q?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+ <a href="https://www.udemy.com/topic/data-science/">Explore more</a><br><br>
+ </div>
+ 
+ <div class='hidden_desc' id="page5_desc">
+    <h2>Become an expert in cloud computing with AWS Certification</h2><br>
+	Prep for your AWS certification with an AWS course. Learn the fundamentals of AWS such as working with a serverless<br> platform, the various frameworks, security and more. With these courses, you’ll build the valuable skills you need to implement<br> cloud initiatives — and open up new career opportunities.<br><br>
+    <iframe width="360" height="215" src="https://www.youtube.com/embed/tXqSCFkqQvo?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="360" height="215" src="https://www.youtube.com/embed/R-O9tnTuDb0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="360" height="215" src="https://www.youtube.com/embed/hgWOvKAUs3Y?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+ <a href="https://www.udemy.com/topic/aws-certification/">Explore more</a><br><br> 
+ </div>
+ 
+ <div class='hidden_desc' id="page6_desc">
+    <h2>Analyze and visualize data with Excel</h2><br>
+	Take a Microsoft Excel course and learn how to use this industry-standard software. Real-world experts will show you<br> the basics like how to organize data into sheets, rows and columns, and advanced techniques like creating complex dynamic formulas.<br> Both small businesses and large companies use Excel to turn their raw data into actionable insights.<br><br>
+    <iframe width="360" height="215" src="https://www.youtube.com/embed/fcbB0nkDik8?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="360" height="215" src="https://www.youtube.com/embed/cRHmQkEq48A?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="360" height="215" src="https://www.youtube.com/embed/h6YT322x_OA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+ <a href="https://www.udemy.com/topic/excel/">Explore more</a><br><br> 
+ </div>
+ 
+ <div id="page_content">
+    <h2>Expand the World of Python.</h2><br>
+  learn how to code using this incredibly useful language. Its simple syntax and readability makes Python perfect<br> for Flask, Django, data science, and machine learning. You’ll learn how to build everything from games to sites<br> to apps.<br><br>
+ <iframe width="360" height="215" src="https://www.youtube.com/embed/Y8Tko2YC5hA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <iframe width="360" height="215" src="https://www.youtube.com/embed/UGj0bOYPdCw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <iframe width="360" height="215" src="https://www.youtube.com/embed/0unqyeg7LXo?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+ <a href="https://www.udemy.com/topic/python/">Explore more</a><br><br>
+ </div>
+</div>
+</div>
+</div><br>
+<script>
+ function change_tab(id)
+ {
+   document.getElementById("page_content").innerHTML=document.getElementById(id+"_desc").innerHTML;
+   document.getElementById("page1").className="notselected";
+   document.getElementById("page2").className="notselected";
+   document.getElementById("page3").className="notselected";
+   document.getElementById("page4").className="notselected";
+   document.getElementById("page5").className="notselected";
+   document.getElementById("page6").className="notselected";
+   document.getElementById(id).className="selected";
+ }
+</script>
+<!-- select course ends here with script-->
+
+<!-- testionals starts here -->
+<div class="container5">
+<h1 style="text-align: center;">Take a look What Our Learners Says.</h1>
+</div>
+<br>
+<div class="container5">
+<div class="tsmbody">
+<img src="OIP__1_-removebg-preview.png" width="100" height="100"><br><br>
+<p style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu sapien sit amet augue imperdiet porta quis vitae nulla. Phasellus ultricies, ligula sed euismod accumsan, mi ante auctor libero, id volutpat nisl nunc id ligula. Nam varius convallis pretium.</p><br>
+<b style="font-size: 20px; color: #26d63b">David.</b>
+</div>
+<div class="tsmbody">
+<img src="160-1602366_the-independent-young-woman-icono-de-entrevista-de.png" width="100" height="100"><br><br>
+<p style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu sapien sit amet augue imperdiet porta quis vitae nulla. Phasellus ultricies, ligula sed euismod accumsan, mi ante auctor libero, id volutpat nisl nunc id ligula. Nam varius convallis pretium.</p><br>
+<b style="font-size: 20px; color: #26d63b">Cate lara.</b>
+</div>
+<div class="tsmbody">
+<img src="OIP__2_-removebg-preview.png" width="100" height="100"><br><br>
+<p style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu sapien sit amet augue imperdiet porta quis vitae nulla. Phasellus ultricies, ligula sed euismod accumsan, mi ante auctor libero, id volutpat nisl nunc id ligula. Nam varius convallis pretium.</p><br>
+<b style="font-size: 20px; color: #26d63b">James.</b>
+</div>
+</div><br>
+<!-- testionals ends here -->
+
+<!-- faq starts here -->
+<div class="container6">
+<h1>FAQ</h1>
+</div><br>
+<div class="container6">
+<div class="faqbody">
+<img src="Dementia-Image-600x592-removebg-preview.png">
+</div>
+<div class="faqbody2">
+<button class="accordion">What courses are you offering? <i class="arrow down up"></i></button>
+<div class="panel">
+  <p style="padding: 10px 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">How do i add,drop or change my courses? <i class="arrow down up"></i></button>
+<div class="panel">
+  <p style="padding: 10px 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">What kind of students does well with online learning? <i class="arrow down up"></i></button>
+<div class="panel">
+  <p style="padding: 10px 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">How do I enroll and register? <i class="arrow down up"></i></button>
+<div class="panel">
+  <p style="padding: 10px 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">What do I do if I need technical assistance? <i class="arrow down up"></i></button>
+<div class="panel">
+  <p style="padding: 10px 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+
+</div>
+</div>		
+<!-- faq ends here -->
+
+<!-- footer starts here -->
+<div class="socialmedia">
+<div class="footerbox1">
+<h2>Quick links</h2>
+<br>
+<a href="courses.html">Courses</a><br>
+<a href="contact.html">Contact Us</a><br>
+<a href="about.html">About Us</a><br>
+</div>
+<div class="footerbox2">
+<h2>Social media</h2><br>
+<a href="https://www.linkedin.com/in/kiran-kumar-ba04a01ba/" class="fa fa-linkedin"></a> 
+<a href="https://github.com/KiranKumar166" class="fa fa-github"></a>
+</div>
+<div class="footerbox">
+</div>
+<div class="footerbox3">
+<h1>THE INFOLEARN</h1>
+</div>
+</div>
+<!-- footer ends here -->
+
+<!-- sign up starts here -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container10">
+      <h1>Sign Up</h1><br>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button4 type="button4" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button4>
+        <button4 type="submit" class="signupbtn">Sign Up</button4>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<!-- sign up ends here -->
+
+
+<!-- log in starts here -->
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container10">
+      <h1>log in</h1><br>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+
+      <div class="clearfix">
+        <button4 type="button4" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button4>
+        <button4 type="submit" class="signupbtn">Log in</button4>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<!-- log in ends here -->
+
+
+</body>
+</html>	
